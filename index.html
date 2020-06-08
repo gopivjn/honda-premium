@@ -16,7 +16,7 @@
   </head>
 
   <body>
-              <!-- Section 1: Navigation -->
+    <!-- Section 1: Navigation -->
     <nav id="main-nav">
       <div class="container-n">
         <img src="./img/logo-main.png" alt="Honda" class="logo" />
@@ -34,8 +34,7 @@
       </div>
     </nav>
       <!-- Section 2: Banner -->
-    <div >
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <section id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Navigation Dots -->
         <ol class="carousel-indicators">
           <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -82,15 +81,15 @@
           <span class="glyphicon glyphicon-chevron-right"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div>
-    </div>
+      </section>
+    
     <!-- Section 3: Intro -->
     <section id="intro" class="s-margin align">
       <div class="container">
-        <div class="intro">
+        <div class="intro ">
           <h2 class="section-title">Why Premium Honda?</h2>
           <div class="bottom-line"></div>
-          <p>
+          <p class="section-title">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga,
             enim? Dicta nobis tempore accusamus eius reprehenderit, soluta
             mollitia ipsa quasi, eos dolorem laboriosam? Quaerat, magni tempora
@@ -108,7 +107,7 @@
       <div class="container">
         <h2 class="section-title">Latest Models</h2>
         <div class="bottom-line"></div>
-        <div class="items">
+        <div class="items section-title">
           <div class="item">
             <div class="item-image">
               <a href="#"><img src="./img/grid1.png" alt="" /></a>
@@ -177,11 +176,12 @@
           </div>
         </div>
       </div>
-      </div>
+    </section>
+
     <!-- Section 5: Test DRIVE -->
     <section id="test-drive" class="s-margin align">
       <div class="container">
-        <h2 class="section-title">Test Drive</h2>
+        <h2 class="section-title">Test Drive Booking</h2>
         <div class="bottom-line"></div>
     
         <div class="test-info">
@@ -192,6 +192,11 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Perspiciatis nostrum, eaque velit ipsam facilis sed, quisquam
               nesciunt unde nihil voluptatum 
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Perspiciatis nostrum, eaque velit ipsam facilis sed, 
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Perspiciatis nostrum, eaque velit ipsam facilis sed, 
+
             </p>
           </div>
         </div>
@@ -200,13 +205,20 @@
     <!-- Section 6: Servicing  -->
     <section id="servicing-book" class="s-margin align">
       <div class="container">
-        <h2 class="section-title">Service Booking</h2>
+      <h2 class="section-title">Service Booking</h2>
         <div class="bottom-line"></div>
-    
         <div class="servicing-info">
           <div class="servicing">
             <h4 class="section-subtitle">Book your Service with ease.</h4>
             <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Perspiciatis nostrum, eaque velit ipsam facilis sed, quisquam
+              nesciunt unde nihil voluptatumLorem ipsum dolor sit, amet consectetur adipisicing elit.Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Perspiciatis nostrum, eaque velit ipsam facilis sed, quisquam
+              nesciunt unde nihil voluptatum
+              Perspiciatis nostrum, eaque velit ipsam facilis sed, quisquam
+              nesciunt unde nihil voluptatum
+              Perspiciatis nostrum, eaque velit ipsam facilis sed, 
               Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Perspiciatis nostrum, eaque velit ipsam facilis sed, 
             </p>
@@ -214,12 +226,13 @@
           <img src="img/servicing.jpeg" alt="" class="servicing-booking" />
         </div>
     </section>
+
     <!-- Section 7: Showroom Gallery  -->
-<section id="gallery-s" class="s-margin align">
+    <section id="gallery-s" class="s-margin align">
   <div class="container">
     <h2 class="section-title">Showroom Gallery</h2>
     <div class="bottom-line"></div>
-    <div class="items-sh">
+    <div class="items-sh section-title">
       <div class="items-s">
         <div class="items-s-image">
           <a href="#"><img src="./img/gal1.jpg" alt="" /></a>
@@ -334,13 +347,13 @@
   </div>
   </div>
   
-</section>
+    </section>
     <!-- Section 8: Testimonials -->
     <section id="customer" class="s-margin align">
       <div class="container">
         <h2 class="section-title">Testimonials</h2>
         <div class="bottom-line"></div>
-        <h4 class="lead text-center section-subtitle"><i class="fas fa-quote-left fa-2x quote"></i> <br>   Take a look at what our clients say about us...</h4>
+        <h4 class="section-title text-center section-subtitle">Take a look at what our clients say about us...<br><br><i class="fas fa-quote-left fa-2x quote"></i></h4>
         <div class="testimonials">
           <div class="test-border">
             <p>
@@ -473,7 +486,6 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-</script>
-    
+    </script>
   </body>
 </html>

@@ -57,8 +57,8 @@ img {
 }
 
 .bottom-line {
-  height: 0.2rem;
-  width: 6rem;
+  height: 0.6rem;
+  width: 8rem;
   background: #f70000;
   display: block;
   margin: 0 auto 1rem auto;
@@ -67,7 +67,7 @@ img {
 
 .section-title {
   padding-top: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
 }
 
 .section-subtitle {
@@ -179,6 +179,7 @@ ul li {
 
 .test-info {
   padding: 50px;
+  margin-top: 50px;
   border: 2px solid #979a9c;
   border-radius: 20px;
   background: #eae9e6;
@@ -191,7 +192,11 @@ ul li {
   grid-gap: 1.2rem;
 }
 
-/* // Grid Area */
+#servicing-book h2 {
+  padding-top: 50px;
+  text-align: center;
+}
+
 .servicing-image {
   grid-area: t-img;
 }
@@ -202,14 +207,9 @@ ul li {
   padding: 0.8rem;
 }
 
-#servicing-book h2 {
-  padding-top: 50px;
-  padding-bottom: 20px;
-  text-align: center;
-}
-
 .servicing-info {
   padding: 50px;
+  margin-top: 50px;
   border: 2px solid #979a9c;
   border-radius: 20px;
   background: #eae9e6;
@@ -217,7 +217,6 @@ ul li {
 
 #servicing-book h2 {
   padding-top: 50px;
-  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -287,8 +286,8 @@ ul li {
   height: 40px;
   width: 40px;
   line-height: 20px;
-  text-align: center;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .items-sh {
