@@ -270,12 +270,27 @@ ul li {
 /* // Footer */
 #main-footer {
   height: 10rem;
-  align-items: center;
-  justify-content: center;
 }
 #main-footer p {
   height: 10rem;
   font-size: 14px;
+}
+#main-footer h3 {
+  margin-bottom: 10px;
+}
+
+.social .fab {
+  margin-right: 1rem;
+  border: 2px #fff solid;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  line-height: 20px;
+  text-align: center;
+  padding: 0.5rem;
+}
+.social .fab:hover {
+  border: 2px solid $banner-color;
 }
 
 #main-footer .container-f {
@@ -286,17 +301,6 @@ ul li {
   padding: 20px;
   background: $hover-color;
   color: $secondary-color;
-}
-
-#main-footer .social .fab {
-  margin-right: 1rem;
-  border: 2px #fff solid;
-  border-radius: 100%;
-  height: 40px;
-  width: 40px;
-  line-height: 20px;
-  padding: 0.5rem;
-  text-align: center;
 }
 
 // Showroom Gallery
