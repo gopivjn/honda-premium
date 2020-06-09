@@ -27,7 +27,7 @@
           <li> <a href="#"><i class="fas fa-car"></i> MODELS</a></li>
           <li><a href="#"><i class="fas fa-cog"></i> TEST DRIVE</a></li>
           <li><a href="#"><i class="fas fa-tools"></i> SERVICE</a></li>
-        <li> <a href="#"><i class="fas fa-map-marker-alt"></i> LOCATION</a></li>
+        <li> <a href="#"><i class="fas fa-map-marker-alt"></i> LOCATIONS</a></li>
           <li><a href="#"><i class="fas fa-rupee-sign"></i> PRICE</a></li>
         <li> <a href="#"><i class="fas fa-phone-volume"></i> SUPPORT</a></li>
         </ul>
@@ -232,115 +232,111 @@
   <div class="container">
     <h2 class="section-title">Showroom Gallery</h2>
     <div class="bottom-line"></div>
-    <div class="items-sh section-title">
-      <div class="items-s">
-        <div class="items-s-image">
-          <a href="#"><img src="./img/gal1.jpg" alt="" /></a>
-        </div>
-        <div class="items-s-text">
-          <div class="items-s-text-wrap">
-            <p class="items-s-text-category">Lobby</p>
-            <h6 class="items-s-text-title">Location1</h6>
-          </div>
-        </div>
+    <div class="row">
+      <div class="column">
+        <img
+          src="./img/gal1.jpg"
+          style="width: 100%;"
+          onclick="openModal();currentSlide(1)"
+          class="hover-shadow cursor"
+        />
       </div>
-      <div class="items-s">
-        <div class="items-s-image">
-          <a href="#"><img src="./img/gal2.jpg" alt="" /></a>
-        </div>
-        <div class="items-s-text">
-          <div class="items-s-text-wrap">
-            <p class="items-s-text-category">Showroom Entry</p>
-            <h6 class="items-s-text-title">Location1</h6>
-          </div>
-        </div>
+      <div class="column">
+        <img
+          src="./img/gal2.jpg"
+          style="width: 100%;"
+          onclick="openModal();currentSlide(2)"
+          class="hover-shadow cursor"
+        />
       </div>
-      <div class="items-s">
-        <div class="items-s-image">
-          <a href="#"><img src="./img/gal3.jpg" alt="" /></a>
-        </div>
-        <div class="items-s-text">
-          <div class="items-s-text-wrap">
-            <p class="items-s-text-category">Front Office</p>
-            <h6 class="items-s-text-title">Location1</h6>
-          </div>
-        </div>
+      <div class="column">
+        <img
+          src="./img/gal3.jpg"
+          style="width: 100%;"
+          onclick="openModal();currentSlide(3)"
+          class="hover-shadow cursor"
+        />
       </div>
-      <div class="items-s">
-        <div class="items-s-image">
-          <a href="#"><img src="./img/gal4.jpg" alt="" /></a>
-        </div>
-        <div class="items-s-text">
-          <div class="items-s-text-wrap">
-            <p class="items-s-text-category">Customer Lounge</p>
-            <h6 class="items-s-text-title">Location1</h6>
-          </div>
-        </div>
+      <div class="column">
+        <img
+          src="./img/gal4.jpg"
+          style="width: 100%;"
+          onclick="openModal();currentSlide(4)"
+          class="hover-shadow cursor"
+        />
       </div>
-      <div class="items-s">
-        <div class="items-s-image">
-          <a href="#"><img src="./img/gal5.jpg" alt="" /></a>
-        </div>
-        <div class="items-s-text">
-          <div class="items-s-text-wrap">
-            <p class="items-s-text-category">Meeting Room</p>
-            <h6 class="items-s-text-title">Location1</h6>
-          </div>
-        </div>
+      <div class="column">
+        <img
+          src="./img/gal5.jpg"
+          style="width: 100%;"
+          onclick="openModal();currentSlide(1)"
+          class="hover-shadow cursor"
+        />
       </div>
-      <div class="items-s">
-        <div class="items-s-image">
-          <a href="#"><img src="./img/gal6.jpg" alt="" /></a>
-        </div>
-        <div class="items-s-text">
-          <div class="items-s-text-wrap">
-            <p class="items-s-text-category">Guest Bay </p>
-            <h6 class="items-s-text-title">Location2</h6>
-          </div>
-        </div>
+      <div class="column">
+        <img
+          src="./img/gal6.jpg"
+          style="width: 100%;"
+          onclick="openModal();currentSlide(2)"
+          class="hover-shadow cursor"
+        />
       </div>
-      <div class="items-s">
-        <div class="items-s-image">
-          <a href="#"><img src="./img/gal6.jpg" alt="" /></a>
-        </div>
-        <div class="items-s-text">
-          <div class="items-s-text-wrap">
-            <p class="items-s-text-category">Back Office </p>
-            <h6 class="items-s-text-title">Location3</h6>
-          </div>
-        </div>
+      <div class="column">
+        <img
+          src="./img/gal2.jpg"
+          style="width: 100%;"
+          onclick="openModal();currentSlide(3)"
+          class="hover-shadow cursor"
+        />
       </div>
-      <div class="items-s">
-        <div class="items-s-image">
-          <a href="#"><img src="./img/gal4.jpg" alt="" /></a>
-        </div>
-        <div class="items-s-text">
-          <div class="items-s-text-wrap">
-            <p class="items-s-text-category">Front Office </p>
-            <h6 class="items-s-text-title">Location3</h6>
-          </div>
-        </div>
+      <div class="column">
+        <img
+          src="./img/gal6.jpg"
+          style="width: 100%;"
+          onclick="openModal();currentSlide(4)"
+          class="hover-shadow cursor"
+        />
       </div>
-      <div class="items-s">
-        <div class="items-s-image">
-          <a href="#"><img src="./img/gal3.jpg" alt="" /></a>
+    </div>
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">×</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <div class="numbertext">1 / 8</div>
+          <img src="./img/gal1.jpg" style="width: 100%;" />
         </div>
-        <div class="items-s-text">
-          <div class="items-s-text-wrap">
-            <p class="items-s-text-category">Lobby </p>
-            <h6 class="items-s-text-title">Location2</h6>
-          </div>
+        <div class="mySlides">
+          <div class="numbertext">2 / 8</div>
+          <img src="./img/gal2.jpg" style="width: 100%;" />
         </div>
-      </div>
-      <div class="items-s">
-        <div class="items-s-image">
-          <a href="#"><img src="./img/gal1.jpg" alt="" /></a>
+        <div class="mySlides">
+          <div class="numbertext">3 / 8</div>
+          <img src="./img/gal3.jpg" style="width: 100%;" />
         </div>
-        <div class="items-s-text">
-          <div class="items-s-text-wrap">
-            <p class="items-s-text-category">Office </p>
-            <h6 class="items-s-text-title">Location1</h6>
-          </div>
+        <div class="mySlides">
+          <div class="numbertext">4 / 8</div>
+          <img src="./img/gal4.jpg" style="width: 100%;" />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">5 / 8</div>
+          <img src="./img/gal5.jpg" style="width: 100%;" />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">6 / 8</div>
+          <img src="./img/gal6.jpg" style="width: 100%;" />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">7 / 8</div>
+          <img src="./img/gal2.jpg" style="width: 100%;" />
+        </div>
+        <div class="mySlides">
+          <div class="numbertext">8 / 8</div>
+          <img src="./img/gal6.jpg" style="width: 100%;" />
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        <div class="caption-container">
+          <p id="caption"></p>
         </div>
       </div>
     </div>
@@ -443,48 +439,43 @@
            </div>
       </div>
     </footer>
-
     <script>
-// Open the Modal
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
-
-// Close the Modal
-function closeModal() {
-  document.getElementById("myModal").style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
+      function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+      function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+      }
+      var slideIndex = 1;
+      showSlides(slideIndex);
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
     </script>
+    
   </body>
 </html>
