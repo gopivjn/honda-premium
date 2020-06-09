@@ -298,6 +298,22 @@ ul li {
   background: #ffffff;
 }
 
+.parallax-text2 {
+  height: 150px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 22px;
+  font-style: italic;
+  background: #ffffff;
+}
+
+.parallax-text3 {
+  height: 200px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 22px;
+  font-style: italic;
+  background: #ffffff;
+}
+
 .location {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -312,6 +328,16 @@ ul li {
 
 #location .location-border p {
   border-right: 3px solid #e51b2f;
+}
+
+.loc-subtitle {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#location .content-text {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /* // Footer */

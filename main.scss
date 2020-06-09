@@ -85,6 +85,7 @@ img {
 .section-subtitle {
   padding-bottom: 20px;
 }
+
 /* // Navigation */
 #main-nav {
   background: $banner-color;
@@ -319,6 +320,22 @@ ul li {
   background: $main-color;
 }
 
+.parallax-text2 {
+  height: 150px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 22px;
+  font-style: italic;
+  background: $main-color;
+}
+
+.parallax-text3 {
+  height: 200px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 22px;
+  font-style: italic;
+  background: $main-color;
+}
+
 // Locations
 
 .location {
@@ -335,6 +352,16 @@ ul li {
 
 #location .location-border p {
   border-right: 3px solid $banner-color;
+}
+
+.loc-subtitle {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#location .content-text {
+  font-size: 16px;
+  font-weight: 400;
 }
 /* // Footer */
 #main-footer {
