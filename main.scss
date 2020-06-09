@@ -6,6 +6,9 @@ $hover-color: #979a9c;
 $bg-main: #eae9e6;
 $max-width: 1100px;
 
+@import "media";
+@import "parallax";
+
 * {
   margin: 0;
   padding: 0;
@@ -147,6 +150,14 @@ ul li {
   font-size: 14px;
 }
 
+// Intro Section
+
+.intro-text {
+  font-size: 22px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
 // Banner Carousel
 
 #myCarousel {
@@ -203,12 +214,22 @@ ul li {
   margin-top: 50px;
   // border: 2px solid $hover-color;
   // border-radius: 10px;
-  // background: $bg-main;
 }
 
 #test-drive .container {
   border-radius: 10px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  color: $main-color;
+  background: #5c636e;
+}
+
+#test-drive .seperator {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+}
+
+.test .red {
+  color: $banner-color;
 }
 
 /* // Servicing */
@@ -227,6 +248,13 @@ ul li {
 #servicing-book .container {
   border-radius: 10px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  color: $main-color;
+  background: #5c636e;
+}
+
+#servicing-book .seperator {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
 }
 
 .servicing-image {
@@ -237,6 +265,10 @@ ul li {
   grid-area: t-con;
   border-right: $banner-color 3px solid;
   padding: 0.8rem;
+}
+
+.servicing .red {
+  color: $banner-color;
 }
 
 .servicing-info {
@@ -250,6 +282,10 @@ ul li {
 #servicing-book h2 {
   padding-top: 50px;
   text-align: center;
+}
+
+#gallery-s {
+  padding-bottom: 50px;
 }
 
 /* // Testimonials */
@@ -271,69 +307,6 @@ ul li {
   font-style: italic;
   background: $bg-main;
   padding: 20px;
-}
-
-// Parallax Effect
-
-.parallax {
-  /* The image used */
-  background-image: url("../img/happy1.jpg");
-
-  /* Set a specific height */
-  min-height: 300px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.parallax2 {
-  /* The image used */
-  background-image: url("../img/happy2.jpg");
-  min-height: 300px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.parallax3 {
-  /* The image used */
-  background-image: url("../img/happy3.jpg");
-
-  /* Set a specific height */
-  min-height: 300px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.parallax-text {
-  height: 300px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 22px;
-  font-style: italic;
-  background: $main-color;
-}
-
-.parallax-text2 {
-  height: 150px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 22px;
-  font-style: italic;
-  background: $main-color;
-}
-
-.parallax-text3 {
-  height: 200px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 22px;
-  font-style: italic;
-  background: $main-color;
 }
 
 // Locations
