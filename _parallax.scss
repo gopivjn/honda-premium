@@ -42,7 +42,9 @@
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 22px;
   font-style: italic;
-  background: $main-color;
+  background: none;
+  text-align: center;
+  margin: 50px 250px;
 }
 
 .parallax-text2 {
@@ -50,13 +52,7 @@
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 22px;
   font-style: italic;
-  background: $main-color;
-}
-
-.parallax-text3 {
-  height: 200px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 22px;
-  font-style: italic;
-  background: $main-color;
+  background: none;
+  text-align: center;
+  margin: 50px 250px;
 }

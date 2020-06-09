@@ -5,12 +5,39 @@
     color: $main-color;
     font-size: 8px;
   }
+
+  .top-nav span {
+    display: none;
+  }
 }
 
 // Smartphones
 @media (max-width: 500px) {
-  .top-nav span {
-    display: none;
+  #main-nav span h2 {
+    font-size: 15px;
+  }
+
+  #main-nav img.logo {
+    width: 90px;
+  }
+
+  #myCarousel {
+    img {
+      width: auto;
+    }
+  }
+  #intro {
+    .section-heading {
+      font-size: 28px;
+      font-family: "Lato", Arial, Helvetica, sans-serif;
+    }
+    .section-title {
+      padding-top: 20px;
+      padding-bottom: 5px;
+    }
+    .intro-text {
+      font-size: 13px;
+    }
   }
 }
 
