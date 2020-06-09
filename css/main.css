@@ -181,9 +181,9 @@ ul li {
 .test-info {
   padding: 50px;
   margin-top: 50px;
-  border: 2px solid #979a9c;
-  border-radius: 20px;
+  border-radius: 10px;
   background: #eae9e6;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 /* // Servicing */
@@ -211,9 +211,9 @@ ul li {
 .servicing-info {
   padding: 50px;
   margin-top: 50px;
-  border: 2px solid #979a9c;
   border-radius: 20px;
   background: #eae9e6;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 #servicing-book h2 {
