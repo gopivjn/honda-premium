@@ -5,9 +5,9 @@
 }
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: "Futura-PT", sans-serif;
   line-height: 1.5;
-  background: #eae9e6;
+  background: #ffffff;
 }
 
 img {
@@ -17,7 +17,7 @@ img {
 /* // utilities */
 .container {
   max-width: 1100px;
-  margin: auto;
+  margin: 20px auto;
   padding: 0 2rem;
   overflow: hidden;
   background: #ffffff;
@@ -70,6 +70,11 @@ img {
   padding-bottom: 5px;
 }
 
+.section-heading {
+  font-size: 43px;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
 .section-subtitle {
   padding-bottom: 20px;
 }
@@ -89,10 +94,10 @@ img {
 span h2 {
   color: #ffffff;
   display: inline-block;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Georgia", sans-serif;
   font-size: 20px;
   text-align: center;
-  font-weight: 900;
+  font-weight: 800;
   margin: 0;
 }
 
@@ -132,6 +137,10 @@ ul li {
   text-decoration: none;
   color: #ffffff;
   font-size: 14px;
+}
+
+#myCarousel {
+  z-index: -1;
 }
 
 /* // Models Gallery section */
@@ -181,21 +190,28 @@ ul li {
 .test-info {
   padding: 50px;
   margin-top: 50px;
+}
+
+#test-drive .container {
   border-radius: 10px;
-  background: #eae9e6;
-  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 /* // Servicing */
 .servicing-info {
   display: grid;
-  grid-template-areas: "t-con t-con t-img";
+  grid-template-areas: " t-con t-con t-img ";
   grid-gap: 1.2rem;
 }
 
 #servicing-book h2 {
   padding-top: 50px;
   text-align: center;
+}
+
+#servicing-book .container {
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .servicing-image {
@@ -212,8 +228,6 @@ ul li {
   padding: 50px;
   margin-top: 50px;
   border-radius: 20px;
-  background: #eae9e6;
-  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 #servicing-book h2 {
@@ -224,7 +238,7 @@ ul li {
 /* // Testimonials */
 .testimonials {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   grid-gap: 0.5rem;
 }
 
@@ -240,6 +254,48 @@ ul li {
   font-style: italic;
   background: #eae9e6;
   padding: 20px;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../img/happy1.jpg");
+  /* Set a specific height */
+  min-height: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("../img/happy2.jpg");
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax3 {
+  /* The image used */
+  background-image: url("../img/happy3.jpg");
+  /* Set a specific height */
+  min-height: 300px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-text {
+  height: 300px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 22px;
+  font-style: italic;
+  background: #ffffff;
 }
 
 .location {
@@ -260,7 +316,8 @@ ul li {
 
 /* // Footer */
 #main-footer {
-  height: 10rem;
+  height: auto;
+  background: #4f4f4f;
 }
 
 #main-footer p {
@@ -293,8 +350,8 @@ ul li {
   align-items: center;
   grid-gap: 10rem;
   padding: 20px;
-  background: #979a9c;
-  color: #2e3439;
+  background: #4f4f4f;
+  color: #ffffff;
 }
 
 .items-sh {
