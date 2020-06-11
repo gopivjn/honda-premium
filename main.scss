@@ -321,6 +321,12 @@ ul li {
 
 #gallery-s {
   padding-bottom: 50px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+#gallery-s .row {
+  padding-top: 50px;
 }
 
 /* // Testimonials */
@@ -435,23 +441,10 @@ ul li {
 
 // Showroom Gallery
 
-.items-sh {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 0.2rem;
-}
-.item {
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-}
-
-.items-s:hover {
-  opacity: 0.5;
-}
-
 // Model Image trial
 
 .row > .column {
-  padding: 8px 8px;
+  padding: 8px 8px 8px 8px;
 }
 .row:after {
   content: "";
@@ -461,6 +454,7 @@ ul li {
 .column {
   float: left;
   width: 25%;
+  height: 180px;
 }
 /* The Modal (background) */
 .modal {
@@ -583,7 +577,8 @@ img.hover-shadow {
   transition: 0.3s;
 }
 .hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 $secondary-color, 0 6px 20px 0 $secondary-color;
 }
 
 // Model Image trial
