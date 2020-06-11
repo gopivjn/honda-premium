@@ -388,9 +388,10 @@ ul li {
 }
 
 #gallery-s {
+  margin-bottom: 50px;
+  margin-top: 50px;
   padding-bottom: 50px;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  box-shadow: 8px 0 10px -4px #2e3439, -8px 0 10px -4px #2e3439;
 }
 
 #gallery-s .row {
@@ -512,7 +513,8 @@ ul li {
 }
 
 .row > .column {
-  padding: 8px 8px 8px 8px;
+  padding: 8px 8px;
+  margin-top: 20px;
 }
 
 .row:after {
