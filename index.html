@@ -19,44 +19,52 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
 
-  <body>
+  <body id="top">
     <!-- 1: Navigation -->
     <nav id="main-nav">
       <div class="container-n">
-        <img src="./img/logo-main.png" alt="Honda" class="logo" />
-        <span>
-          <h2>PREMIUM HONDA</h2>
-        </span>
+        <div class="main-logo">
+          <a href="#top"
+              ><img src="./img/mainlogo.png" alt="Honda" class="logo" /></a
+            >
+          <a href="#top"><span>
+            <h2>PREMIUM HONDA</h2>
+          </span> </a>
+        </div>
         <ul class="top-nav">
           <li>
             <a href="#gallery"
-              ><i class="fas fa-car"></i><span> MODELS</span></a
+              ><i class="fas fa-car"></i><br />
+              <span>MODELS</span></a
             >
           </li>
           <li>
-            <a href="#test-drive"
-              ><i class="fas fa-cog"></i> <span>TEST DRIVE</span></a
+            <a href="#test-drive">
+              <i class="fas fa-cog"></i><br />
+              <span>TEST DRIVE</span></a
             >
           </li>
           <li>
             <a href="#servicing-book"
-              ><i class="fas fa-tools"></i> <span>SERVICE</span></a
+              ><i class="fas fa-tools"></i><br />
+              <span>SERVICE</span></a
             >
           </li>
           <li>
             <a href="#location"
-              ><i class="fas fa-map-marker-alt"></i> <span>LOCATIONS</span></a
+              ><i class="fas fa-map-marker-alt"></i> <br />
+              <span>LOCATIONS</span></a
             >
           </li>
           <li>
             <a href="https://www.hondacarindia.com/cars-price-list"
-              ><i class="fas fa-rupee-sign"></i> <span>PRICE</span></a
+              ><i class="fas fa-rupee-sign"></i> <br />
+              <span>PRICE</span></a
             >
           </li>
           <li>
-            <a href="#"
-              ><i class="fas fa-phone-volume"></i> <span>SUPPORT</span></a
-            >
+            <a href="#"></a><i class="fas fa-phone-volume"></i> <br />
+             <span>SUPPORT</span></a>
           </li>
         </ul>
       </div>
@@ -175,7 +183,7 @@
               </div>
             </div>
           </div>
-          <div class="item">
+          <div class="item1">
             <div class="item-image">
               <a href="https://www.hondacarindia.com/honda-crv"
                 ><img src="./img/grid4.png" alt="CRV"
@@ -188,7 +196,7 @@
               </div>
             </div>
           </div>
-          <div class="item">
+          <div class="item1">
             <div class="item-image">
               <a href="https://www.hondacarindia.com/new-honda-wrv"
                 ><img src="./img/grid5.png" alt="WR-V"
@@ -201,10 +209,10 @@
               </div>
             </div>
           </div>
-          <div class="item">
-            <div class="item-image">
+          <div class="item2">
+            <div class="item-image1">
               <a href="https://www.hondacarindia.com/honda-jazz"
-                ><img src="./img/grid6.png" alt="New Jazz"
+                ><img src="./img/Jazz_logo_black.png" alt="New Jazz"
               /></a>
             </div>
             <div class="item-text">
@@ -250,6 +258,10 @@
               onclick="openModal();currentSlide(1)"
               class="hover-shadow cursor"
             />
+            <a href="#" onclick="typeWriter()"
+              ><span></span><span></span><span></span><span></span>
+              elSpectra
+            </a>
           </div>
           <div class="column">
             <img
@@ -370,23 +382,23 @@
       <h2>Testimonials</h2>
       <div class="bottom-line"></div>
       <h3>Take a look at what our clients say about us...</h3>
-      <div class="testimonials">
-        <div class="parallax"></div>
-        <div class="parallax-text">
+      <div id="parallax">
+        <div class="parallax-one"></div>
+        <div class="block">
           <h4><i class="fas fa-quote-left fa-2x quote"></i></h4>
           <p>
-            It was pleasant experience buying my new car Honda Amaze at your
+            Hi, It was pleasant experience buying my new car Honda Amaze at your
             Premium Honda showroom. Need to mention service rendered by your
             representative Balachandra, gave complete info from start of my
             decision of buying car and till taking delivery of my Car...
             Wonderful handover of my car... Great experience.... Bala-- it's a
             Wow experience... Keep going.... And thanks to team for speedy
             process on finance.. Keep going... Cheers... wishing you all the
-            best
+            best.
           </p>
         </div>
-        <div class="parallax2"></div>
-        <div class="parallax-text2">
+        <div class="parallax-two"></div>
+        <div class="block">
           <h4><i class="fas fa-quote-left fa-2x quote"></i></h4>
           <p>
             Dear Zilan, Thanks very much for your help when I dropped in today.
@@ -394,8 +406,8 @@
             today’s visit. Best wishes, Praveen
           </p>
         </div>
-        <div class="parallax3"></div>
-        <div class="parallax-text2">
+        <div class="parallax-three"></div>
+        <div class="block">
           <h4><i class="fas fa-quote-left fa-2x quote"></i></h4>
           <p>
             “Munawar is very good in responding and replying.. I feel it is
@@ -490,7 +502,7 @@
             {
               scrollTop: $(hash).offset().top - 70,
             },
-            800
+            900
           );
         }
       });

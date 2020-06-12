@@ -38,58 +38,59 @@
   }
 }
 
-.parallax {
-  /* The image used */
-  background-image: url("../img/happy1.jpg");
-  /* Set a specific height */
-  min-height: 300px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.parallax2 {
-  /* The image used */
-  background-image: url("../img/happy2.jpg");
-  min-height: 300px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.parallax3 {
-  /* The image used */
-  background-image: url("../img/happy3.jpg");
-  /* Set a specific height */
-  min-height: 300px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.parallax-text {
-  height: 300px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 22px;
-  font-style: italic;
-  background: none;
+#parallax .block {
+  padding: 60px;
+  margin: 0 auto;
   text-align: center;
-  margin: 70px 200px;
 }
 
-.parallax-text2 {
-  height: 150px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 22px;
-  font-style: italic;
-  background: none;
-  text-align: center;
-  margin: 70px 200px;
+#parallax .block p {
+  padding-top: 30px;
+}
+
+#parallax .parallax-one {
+  padding-top: 360px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(../img/happy1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+#parallax .parallax-two {
+  padding-top: 360px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(../img/happy3.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+#parallax .parallax-three {
+  padding-top: 360px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(../img/happy3.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(Penthouse-ExtraBold);
+}
+
+div {
+  font-family: myFirstFont;
 }
 
 * {
@@ -179,58 +180,73 @@ img {
   position: sticky;
   top: 0;
   z-index: 2;
+  height: 70px;
+  padding: 5px;
 }
 
 #main-nav .logo {
-  width: 120px;
+  width: 100px;
+  height: 55px;
+  overflow: hidden;
+}
+
+.main-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
 }
 
 span h2 {
   color: #ffffff;
   display: inline-block;
-  font-family: "Georgia", sans-serif;
-  font-size: 20px;
+  font-family: "myFirstFont";
+  font-size: 21px;
   text-align: center;
   font-weight: 800;
   margin: 0;
-}
-
-#main-nav h2 {
-  text-align: center;
+  padding: 0;
 }
 
 #main-nav .container-n {
   display: grid;
-  grid-template-columns: 1fr 3fr 9fr;
+  grid-template-columns: 3.8fr 8.2fr;
   padding: 0 1rem;
   align-items: center;
+  text-align: center;
 }
 
 #main-nav ul {
   color: #ffffff;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  padding: 20px;
-  font-size: 12px;
+  padding-left: 0;
+  font-size: 14px;
   text-decoration: none;
   list-style: none;
   margin: 0;
+  text-align: center;
+}
+
+.top-nav .fas {
+  padding-right: 10px;
 }
 
 ul li {
   text-decoration: none;
-  border-left: 0.5px solid #ffffff;
   text-align: center;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  border-left: 0.5px solid #ffffff;
+  justify-content: center;
 }
 
-#main-nav a:hover {
+#main-nav li a:hover {
   color: #2e3439;
 }
 
 #main-nav a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 14px;
 }
 
 .intro-text {
@@ -256,6 +272,25 @@ ul li {
 
 #gallery .item {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  padding: 25px;
+}
+
+#gallery .item1 {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  padding: 60px 25px 15px 25px;
+}
+
+#gallery .item1 .item-text {
+  padding-top: 45px;
+}
+
+#gallery .item2 {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  padding: 95px 25px 15px 25px;
+}
+
+#gallery .item2 .item-text {
+  padding-top: 95px;
 }
 
 #gallery .item-text p {
@@ -270,6 +305,14 @@ ul li {
 }
 
 #gallery .item:hover {
+  border: 1px solid #e51b2f;
+}
+
+#gallery .item1:hover {
+  border: 1px solid #e51b2f;
+}
+
+#gallery .item2:hover {
   border: 1px solid #e51b2f;
 }
 
@@ -659,6 +702,11 @@ ul li {
 
 img.hover-shadow {
   transition: 0.3s;
+}
+
+#gallery-s span {
+  position: absolute;
+  display: block;
 }
 
 .hover-shadow:hover {

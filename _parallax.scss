@@ -1,58 +1,46 @@
-// Parallax Effect
+//Parallax Effect
 
-.parallax {
-  /* The image used */
-  background-image: url("../img/happy1.jpg");
-
-  /* Set a specific height */
-  min-height: 300px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.parallax2 {
-  /* The image used */
-  background-image: url("../img/happy2.jpg");
-  min-height: 300px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.parallax3 {
-  /* The image used */
-  background-image: url("../img/happy3.jpg");
-
-  /* Set a specific height */
-  min-height: 300px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.parallax-text {
-  height: 300px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 22px;
-  font-style: italic;
-  background: none;
+#parallax .block {
+  padding: 60px;
+  margin: 0 auto;
   text-align: center;
-  margin: 70px 200px;
+}
+#parallax .block p {
+  padding-top: 30px;
 }
 
-.parallax-text2 {
-  height: 150px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 22px;
-  font-style: italic;
-  background: none;
-  text-align: center;
-  margin: 70px 200px;
+#parallax .parallax-one {
+  padding-top: 360px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(../img/happy1.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+#parallax .parallax-two {
+  padding-top: 360px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(../img/happy3.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+#parallax .parallax-three {
+  padding-top: 360px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(../img/happy3.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
