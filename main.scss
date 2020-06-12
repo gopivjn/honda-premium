@@ -175,6 +175,10 @@ ul li {
   color: $main-color;
 }
 
+#main-nav .icon {
+  display: none;
+}
+
 // Intro Section
 
 .intro-text {
@@ -191,8 +195,8 @@ ul li {
 
 #myCarousel {
   img {
-    height: 90vh;
     width: 100%;
+    height: auto;
   }
 }
 
