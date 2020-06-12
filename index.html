@@ -129,10 +129,10 @@
       <div class="container">
         <div class="intro">
           <div>
-            <h2>Why Premium Honda?</h2>
+            <h2 class="title-style">Why Premium Honda?</h2>
             <div class="bottom-line"></div>
           </div>
-          <p>
+          <p class="content-style">
             Premium Honda has always strived to car buyers and owners in the
             most comprehensive and convenient way possible. We provide platform
             where Car buyers and owners can research, the company emphasis on
@@ -148,7 +148,7 @@
     <!-- 4: Models Gallery -->
     <section id="gallery">
       <div class="container">
-        <h2>Latest Models</h2>
+        <h2 class="title-style">Latest Models</h2>
         <div class="bottom-line"></div>
         <div class="items">
           <div class="item">
@@ -239,9 +239,11 @@
         <div class="test-info">
           <img src="./img/test-driving.png" alt="" class="test-img" />
           <div class="test">
-            <h2>Test Drive Booking</h2>
+            <h2 class="title-splstyle">Test Drive Booking</h2>
             <div class="bottom-lines1"></div>
-            <h4>Book your test drive today!</h4>
+            <h4 class="subtitle-splstyle">
+              Experience quality and class, first hand.
+            </h4>
             <h3>
               Contact us <span class="red"><i class="fas fa-at"></i></span>
             </h3>
@@ -255,7 +257,7 @@
     <!-- 6: Showroom Gallery  -->
     <section id="gallery-s">
       <div class="container">
-        <h2>Showroom Gallery</h2>
+        <h2 class="title-style">Showroom Gallery</h2>
         <div class="bottom-line"></div>
         <div class="row">
           <div class="column">
@@ -265,10 +267,6 @@
               onclick="openModal();currentSlide(1)"
               class="hover-shadow cursor"
             />
-            <a href="#" onclick="typeWriter()"
-              ><span></span><span></span><span></span><span></span>
-              elSpectra
-            </a>
           </div>
           <div class="column">
             <img
@@ -304,7 +302,10 @@
             </div>
             <div class="mySlides">
               <div class="numbertext">2 / 8</div>
-              <img src="./img/gallery2.jpeg" style="width: 100%;" />
+              <img
+                src="./img/gallery2.jpeg"
+                style="width: 90%; height: 85vh;"
+              />
             </div>
             <div class="mySlides">
               <div class="numbertext">3 / 8</div>
@@ -330,9 +331,11 @@
         <div class="servicing-info">
           <img src="./img/Car Service.png" alt="" class="test-img" />
           <div class="servicing">
-            <h2>Service Booking</h2>
+            <h2 class="title-splstyle">Service Booking</h2>
             <div class="bottom-lines2"></div>
-            <h4>Now book your vehicle service with ease</h4>
+            <h4 class="subtitle-splstyle">
+              Easy, efficient and express service.
+            </h4>
             <h3>
               Contact us <span class="red"><i class="fas fa-at"></i></span>
             </h3>
@@ -346,9 +349,12 @@
     <!-- 8: Locations -->
     <section id="location">
       <div class="container">
-        <h2>Locations</h2>
+        <h2 class="title-style">Locations</h2>
         <div class="bottom-line"></div>
-        <h3>Choose your showroom nearest to you</h3>
+        <div class="location-img">
+          <img src="./img/location.png" alt="" style="width: 50%;" />
+          <h3 class="subtitle-style">Choose your showroom nearest to you</h3>
+        </div>
         <div class="location">
           <div class="location-border">
             <h4 class="loc-subtitle">Anantapur</h4>
@@ -386,14 +392,16 @@
 
     <!--9: Testimonials -->
     <section id="customer">
-      <h2>Testimonials</h2>
+      <h2 class="title-style">Testimonials</h2>
       <div class="bottom-line"></div>
-      <h3>Take a look at what our clients say about us...</h3>
+      <h3 class="subtitle-style">
+        Take a look at what our clients have to say about us...
+      </h3>
       <div id="parallax">
         <div class="parallax-one"></div>
         <div class="block">
           <h4><i class="fas fa-quote-left fa-2x quote"></i></h4>
-          <p>
+          <p class="quote-style">
             Hi, It was pleasant experience buying my new car Honda Amaze at your
             Premium Honda showroom. Need to mention service rendered by your
             representative Balachandra, gave complete info from start of my
@@ -407,7 +415,7 @@
         <div class="parallax-two"></div>
         <div class="block">
           <h4><i class="fas fa-quote-left fa-2x quote"></i></h4>
-          <p>
+          <p class="quote-style">
             Dear Zilan, Thanks very much for your help when I dropped in today.
             Baba did a great job. I would like to give both of you a 10 for
             today’s visit. Best wishes, Praveen
@@ -416,7 +424,7 @@
         <div class="parallax-three"></div>
         <div class="block">
           <h4><i class="fas fa-quote-left fa-2x quote"></i></h4>
-          <p>
+          <p class="quote-style">
             “Munawar is very good in responding and replying.. I feel it is
             always better to chat, rather than calling. because getting quick
             response in chat than calling..“
@@ -454,6 +462,7 @@
         </div>
       </div>
     </footer>
+    <!-- Hamburger menu in mobile view -->
     <script>
       function myFunction() {
         var x = document.getElementById("myTopnav");

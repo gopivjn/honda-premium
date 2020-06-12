@@ -6,26 +6,23 @@ $hover-color: #979a9c;
 $bg-main: #eae9e6;
 $max-width: 1100px;
 $nav-font: "Lato", Arial, Helvetica, sans-serif;
-
-@import "media";
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 @import "parallax";
 
 @font-face {
   font-family: myFirstFont;
   src: url(Penthouse-ExtraBold);
 }
-
 div {
   font-family: myFirstFont;
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  font-family: "Futura-PT", sans-serif;
   line-height: 1.5;
   background: $main-color;
 }
@@ -72,10 +69,6 @@ img {
   padding-bottom: 30px;
 }
 
-.align {
-  text-align: center;
-}
-
 .bottom-line {
   height: 0.6rem;
   width: 8rem;
@@ -83,20 +76,52 @@ img {
   display: block;
   margin: 0 auto 1rem auto;
   border-radius: 10px;
+  display: block;
+  margin-bottom: 60px;
 }
 
-.section-title {
+.title-splstyle {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-family: myFirstFont;
+  font-size: 45px;
+}
+.subtitle-splstyle {
+  font-family: $nav-font;
+  font-size: 28px;
+  font-style: italic;
+  padding-bottom: 20px;
+}
+
+.title-style {
   padding-top: 50px;
   padding-bottom: 5px;
+  font-family: myFirstFont;
+  font-size: 45px;
+  text-align: center;
 }
 
-.section-heading {
-  font-size: 43px;
-  font-family: "Lato", Arial, Helvetica, sans-serif;
+.section-space {
+  padding-top: 40px;
+  padding-bottom: 50px;
 }
 
-.section-subtitle {
-  padding-bottom: 20px;
+.subtitle-style {
+  font-family: $nav-font;
+  font-size: 24px;
+  text-align: center;
+}
+.content-style {
+  font-family: $nav-font;
+  font-size: 20px;
+}
+
+.quote-style {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 24px;
+  font-style: italic;
+  padding-top: 20px;
+  padding-bottom: 80px;
 }
 
 /* // Navigation */
@@ -122,10 +147,10 @@ img {
   align-items: center;
   height: 55px;
 }
-span h2 {
+#main-nav span h2 {
   color: $main-color;
   display: inline-block;
-  font-family: "myFirstFont";
+  font-family: myFirstFont;
   font-size: 21px;
   text-align: center;
   font-weight: 800;
@@ -196,7 +221,7 @@ ul li {
 #myCarousel {
   img {
     width: 100%;
-    height: auto;
+    height: 80vh;
   }
 }
 
@@ -270,7 +295,7 @@ ul li {
   grid-area: t-con;
   // border-left: 3px solid $banner-color;
   padding: 0.8rem;
-  text-align: right;
+  // text-align: right;
 }
 
 .test h3 {
@@ -303,11 +328,13 @@ ul li {
   background: $banner-color;
   display: block;
   border-radius: 10px;
-  margin: 0 0 1rem auto;
+  margin-bottom: 60px;
 }
 
 .test .red {
   color: $banner-color;
+  text-align: right;
+  margin-left: 10px;
 }
 
 .test-img {
@@ -319,6 +346,7 @@ ul li {
   display: grid;
   grid-template-areas: " t-con t-img ";
   grid-gap: 8rem;
+  align-items: center;
 }
 
 #servicing-book h2 {
@@ -335,6 +363,8 @@ ul li {
   background: $banner-color;
   display: block;
   border-radius: 10px;
+  display: block;
+  margin-bottom: 60px;
 }
 
 #servicing-book .container {
@@ -361,6 +391,7 @@ ul li {
 
 .servicing .red {
   color: $banner-color;
+  margin-left: 10px;
 }
 
 .servicing-info {
@@ -425,16 +456,23 @@ ul li {
   padding: 20px;
 }
 
+#location .location-img {
+  display: flex;
+  align-items: center;
+}
+
 #location h3 {
   padding-bottom: 30px;
 }
 
 #location h4 {
   padding-bottom: 30px;
+  text-align: center;
 }
 
 .location span {
   color: $banner-color;
+  text-align: center;
 }
 
 #location .location-border p {
@@ -452,11 +490,14 @@ ul li {
 .loc-subtitle {
   text-transform: uppercase;
   font-weight: 600;
+  font-family: $nav-font;
+  text-align: center;
 }
 
 #location .content-text {
   font-size: 16px;
   font-weight: 400;
+  font-family: $nav-font;
 }
 /* // Footer */
 #main-footer {
