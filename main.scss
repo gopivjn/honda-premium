@@ -114,6 +114,13 @@ img {
 .content-style {
   font-family: $nav-font;
   font-size: 20px;
+  line-height: 2em;
+  text-align: center;
+}
+
+.content-style-footer {
+  font-family: $nav-font;
+  font-size: 14px;
 }
 
 .quote-style {
@@ -215,7 +222,7 @@ ul li {
 // Banner Carousel
 
 #myCarousel {
-  z-index: -1;
+  z-index: -10;
 }
 
 #myCarousel {
@@ -258,12 +265,14 @@ ul li {
   .item-text p {
     text-align: center;
     color: $banner-color;
+    font-family: $nav-font;
   }
 
   .item-text h6 {
     text-align: center;
     color: $secondary-color;
     padding-bottom: 10px;
+    font-family: $nav-font;
   }
 
   .item:hover {
@@ -300,6 +309,7 @@ ul li {
 
 .test h3 {
   padding-top: 10px;
+  font-family: $nav-font;
 }
 
 .test-info {
@@ -309,6 +319,7 @@ ul li {
   border-top: 4px solid $banner-color;
   border-bottom: 4px solid $banner-color;
   border-radius: 10px;
+  align-items: center;
 }
 
 #test-drive .container {
@@ -355,6 +366,7 @@ ul li {
 #servicing-book h3 {
   padding-top: 10px;
   text-align: left;
+  font-family: $nav-font;
 }
 
 .servicing .bottom-lines2 {
@@ -405,16 +417,14 @@ ul li {
 
 // Gallery - Showroom
 
-#gallery-s {
-  margin-bottom: 50px;
-  margin-top: 50px;
-  padding-bottom: 50px;
-  box-shadow: 8px 0 10px -4px $secondary-color,
-    -8px 0 10px -4px $secondary-color;
-}
+// #gallery-s {
+//   box-shadow: 8px 0 10px -4px $secondary-color,
+//     -8px 0 10px -4px $secondary-color;
+// }
 
 #gallery-s .row {
-  padding-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 /* // Testimonials */
@@ -466,7 +476,7 @@ ul li {
 }
 
 #location h4 {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   text-align: center;
 }
 
@@ -546,7 +556,7 @@ ul li {
 // Model Image trial
 
 .row > .column {
-  padding: 8px 8px;
+  padding: 20px 8px;
   margin-top: 20px;
 }
 .row:after {
@@ -684,6 +694,7 @@ img.hover-shadow {
   position: absolute;
   display: block;
 }
+
 .hover-shadow:hover {
   //   // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 4px 8px 0 $secondary-color, 0 6px 20px 0 $secondary-color;

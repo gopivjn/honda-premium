@@ -154,6 +154,13 @@ img {
 .content-style {
   font-family: "Lato", Arial, Helvetica, sans-serif;
   font-size: 20px;
+  line-height: 2em;
+  text-align: center;
+}
+
+.content-style-footer {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-size: 14px;
 }
 
 .quote-style {
@@ -249,7 +256,7 @@ ul li {
 }
 
 #myCarousel {
-  z-index: -1;
+  z-index: -10;
 }
 
 #myCarousel img {
@@ -290,12 +297,14 @@ ul li {
 #gallery .item-text p {
   text-align: center;
   color: #e51b2f;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
 #gallery .item-text h6 {
   text-align: center;
   color: #2e3439;
   padding-bottom: 10px;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
 #gallery .item:hover {
@@ -330,6 +339,7 @@ ul li {
 
 .test h3 {
   padding-top: 10px;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
 .test-info {
@@ -339,6 +349,7 @@ ul li {
   border-top: 4px solid #e51b2f;
   border-bottom: 4px solid #e51b2f;
   border-radius: 10px;
+  align-items: center;
 }
 
 #test-drive .container {
@@ -384,6 +395,7 @@ ul li {
 #servicing-book h3 {
   padding-top: 10px;
   text-align: left;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
 }
 
 .servicing .bottom-lines2 {
@@ -429,15 +441,9 @@ ul li {
   border-radius: 10px;
 }
 
-#gallery-s {
-  margin-bottom: 50px;
-  margin-top: 50px;
-  padding-bottom: 50px;
-  box-shadow: 8px 0 10px -4px #2e3439, -8px 0 10px -4px #2e3439;
-}
-
 #gallery-s .row {
-  padding-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 /* // Testimonials */
@@ -487,7 +493,7 @@ ul li {
 }
 
 #location h4 {
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   text-align: center;
 }
 
@@ -565,7 +571,7 @@ ul li {
 }
 
 .row > .column {
-  padding: 8px 8px;
+  padding: 20px 8px;
   margin-top: 20px;
 }
 
