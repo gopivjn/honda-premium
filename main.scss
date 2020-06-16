@@ -13,9 +13,9 @@ $nav-font: "Lato", Arial, Helvetica, sans-serif;
   font-family: myFirstFont;
   src: url(Penthouse-ExtraBold);
 }
-div {
-  font-family: myFirstFont;
-}
+// div {
+//   font-family: myFirstFont;
+// }
 * {
   margin: 0;
   padding: 0;
@@ -137,7 +137,7 @@ img {
   background: $banner-color;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 10;
   height: 70px;
   padding: 5px;
 }
@@ -219,17 +219,17 @@ ul li {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-// Banner Carousel
-
-#myCarousel {
-  z-index: -10;
+// Carousel Banner
+.carousel-indicators {
+  z-index: 1;
 }
 
-#myCarousel {
-  img {
-    width: 100%;
-    height: 95vh;
-  }
+.caro {
+  max-height: 500px;
+}
+.carousel-inner {
+  height: 100%;
+  max-height: 500px !important;
 }
 
 /* // Models Gallery section */
@@ -322,6 +322,15 @@ ul li {
   align-items: center;
 }
 
+.test a {
+  color: $main-color;
+}
+
+.test a:hover {
+  color: $banner-color;
+  text-decoration: none;
+}
+
 #test-drive .container {
   // border-radius: 10px;
   // box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
@@ -404,6 +413,14 @@ ul li {
 .servicing .red {
   color: $banner-color;
   margin-left: 10px;
+}
+.servicing a {
+  color: $main-color;
+}
+
+.servicing a:hover {
+  color: $banner-color;
+  text-decoration: none;
 }
 
 .servicing-info {
@@ -522,16 +539,24 @@ ul li {
   margin-bottom: 10px;
 }
 
-.social .fab {
-  margin-right: 1rem;
-  border: 2px #fff solid;
-  border-radius: 50%;
-  height: 30px;
-  width: 30px;
-  line-height: 20px;
-  text-align: center;
-  padding: 0.5rem;
+// .social .fab {
+//   margin-right: 1rem;
+//   border: 2px #fff solid;
+//   border-radius: 50%;
+//   height: 30px;
+//   width: 30px;
+//   line-height: 20px;
+//   text-align: center;
+//   padding: 0.5rem;
+// }
+
+.social img {
+  margin-right: 1.2rem;
+  height: 20px;
+  width: 20px;
+  // padding: 0.5rem;
 }
+
 .social .fab:hover {
   border: 2px solid $banner-color;
 }
@@ -580,8 +605,9 @@ ul li {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: black;
+  background-color: $secondary-color;
 }
+
 /* Modal Content */
 .modal-content {
   position: relative;
@@ -593,17 +619,18 @@ ul li {
 }
 /* The Close Button */
 .close {
-  color: $main-color;
+  color: #fff;
   position: absolute;
-  // top: 10px;
-  // right: 25px;
-  top: 85px;
-  right: 150px;
-  font-size: 35px;
-  font-weight: bold;
+  top: 100px;
+  right: 120px;
+  font-size: 14px;
+  opacity: 0.9;
+  font-family: Tahoma, sans-serif, Helvetica, sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  text-shadow: none;
 }
-.close:hover,
-.close:focus {
+.close:hover {
   color: $main-color;
   text-decoration: none;
   cursor: pointer;
@@ -614,6 +641,7 @@ ul li {
 .cursor {
   cursor: pointer;
 }
+
 /* Next & previous buttons */
 .prev {
   cursor: pointer;
