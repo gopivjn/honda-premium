@@ -658,8 +658,6 @@ ul li {
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 16px;
-  margin-top: -50px;
   color: #ffffff;
   background: #4f4f4f;
   font-weight: bold;
@@ -675,8 +673,6 @@ ul li {
   position: absolute;
   top: 50%;
   width: auto;
-  padding: 16px;
-  margin-top: -50px;
   color: #ffffff;
   background: #4f4f4f;
   font-weight: bold;
