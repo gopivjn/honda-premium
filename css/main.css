@@ -524,6 +524,23 @@ textarea {
   padding-bottom: 20px;
 }
 
+.feedback-form .btn-primary {
+  color: #ffffff;
+  background: #e51b2f;
+  border: #e51b2f;
+  width: 20%;
+}
+
+#feedback img {
+  width: 40%;
+}
+
+#feedback .feed {
+  margin: 0 10rem;
+  justify-content: center;
+  align-items: center;
+}
+
 .location {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
