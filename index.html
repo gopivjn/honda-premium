@@ -17,6 +17,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/main.css" />
+
+    <style>
+      @media only screen and (max-width: 768px) {
+        #gallery {
+          .items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0.2rem;
+          }
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -264,7 +276,9 @@
     <section id="test-drive">
       <div class="container">
         <div class="test-info">
-          <img src="./img/test-driving.png" alt="" class="test-img" />
+          <span
+            ><img src="./img/test-driving.png" alt="" class="test-img"
+          /></span>
           <div class="test">
             <h2 class="title-splstyle">
               Book your Test Drive now!
@@ -364,7 +378,9 @@
     <section id="servicing-book">
       <div class="container">
         <div class="servicing-info">
-          <img src="./img/Car Service.png" alt="" class="test-img" />
+          <span>
+            <img src="./img/Car Service.png" alt="" class="test-img"
+          /></span>
           <div class="servicing">
             <h2 class="title-splstyle">Book your Service.</h2>
             <div class="bottom-lines2"></div>
@@ -395,8 +411,12 @@
         <h2 class="title-style">Locations</h2>
         <div class="bottom-line"></div>
         <div class="location-img">
-          <img src="./img/location_new.png" alt="" style="width: 50%;" />
-          <h3 class="subtitle-style">Choose your showroom nearest to you</h3>
+          <span>
+            <img src="./img/location_new.png" alt="" style="width: 50%;"
+          /></span>
+          <h3 class="subtitle-style sub">
+            Choose your showroom nearest to you
+          </h3>
         </div>
         <div class="location">
           <div class="location-border">
@@ -455,7 +475,6 @@
             Your valuable feedback matters, it helps us improve and serve you
             better.
           </h3>
-
           <form name="feedback" method="POST" data-netlify="true">
             <textarea
               id="subject"

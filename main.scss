@@ -8,7 +8,6 @@ $max-width: 1100px;
 $nav-font: "Lato", Arial, Helvetica, sans-serif;
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 @import "parallax";
-
 @font-face {
   font-family: myFirstFont;
   src: url(Penthouse-ExtraBold);
@@ -163,7 +162,6 @@ img {
   font-weight: 800;
   margin: 0;
   padding: 0;
-  // padding: 0 15px;
 }
 
 #main-nav .container-n {
@@ -515,7 +513,7 @@ textarea {
   background: $banner-color;
   border: $banner-color;
   width: 20%;
-
+}
 
 // Locations
 
@@ -776,4 +774,170 @@ img.hover-shadow {
   box-shadow: 0 4px 8px 0 $secondary-color, 0 6px 20px 0 $secondary-color;
 }
 
-// Model Image trial
+// ~~~~~~~~~~~~~~~~~~~~~Mobile Responsive Web Design~~~~~~~~~~~~~~~~~~~~`
+
+// Tablets & Smaller
+@media only screen and (max-width: 768px) {
+  #main-nav {
+    ul span {
+      display: none;
+    }
+    ul li {
+      font-size: 22px;
+    }
+  }
+
+  #gallery {
+    .items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 1em;
+      grid-row-gap: 20px;
+    }
+  }
+
+  #gallery-s {
+    .row > .column {
+      padding: 20px 8px;
+      margin-top: 10px;
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .column {
+      float: left;
+      width: 50%;
+      height: 220px;
+    }
+  }
+
+  .test-info span {
+    display: none;
+  }
+
+  .servicing-info span {
+    display: none;
+  }
+
+  .location-img span {
+    display: none;
+  }
+
+  .location-img {
+    justify-content: center;
+  }
+
+  #parallax .block {
+    padding: 10px;
+    margin: 0 !important;
+    text-align: center;
+  }
+
+  #parallax .block {
+    padding-top: 50px;
+  }
+
+  #customer h3 {
+    padding: 0 20px;
+  }
+
+  #main-footer .container-f {
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    align-items: center;
+    grid-gap: 10rem;
+    padding: 20px;
+  }
+}
+// Smart phones
+@media only screen and (max-width: 550px) {
+  body {
+    width: 550px;
+  }
+  #main-nav {
+    .container-n {
+      max-width: 550px;
+    }
+    .logo {
+      display: none;
+    }
+    ul li {
+      font-size: 24px;
+    }
+  }
+
+  #gallery {
+    .items {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  #gallery-s {
+    .row > .column {
+      padding: 20px 8px;
+      margin-top: 10px;
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    .column {
+      float: left;
+      width: 100%;
+      height: 420px;
+    }
+  }
+
+  .location {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  #location .location-border p {
+    border-right: none;
+  }
+  #location .location-border p {
+    border-bottom: 1px dotted $banner-color;
+  }
+  textarea {
+    height: 100px;
+    width: 400px;
+  }
+
+  #main-footer {
+    height: auto;
+  }
+  #main-footer .container-f {
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    align-items: center;
+    grid-gap: 5rem;
+    padding: 10px;
+    margin: 5px;
+    overflow: scroll;
+  }
+
+  .social img {
+    margin-right: 0.5rem;
+    height: 20px;
+    width: 20px;
+    // padding: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  body {
+    width: 550px;
+  }
+  #main-nav {
+    ul li {
+      font-size: 26px;
+    }
+  }
+  #gallery {
+    .items {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
