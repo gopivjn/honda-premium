@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 #parallax .block {
   padding: 60px;
-  margin: 0 auto;
+  margin: 0 220px;
   text-align: center;
 }
 
@@ -487,6 +487,41 @@ ul li {
   font-style: italic;
   background: #eae9e6;
   padding: 20px;
+}
+
+#customer input[type="subject"] {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+textarea {
+  height: 150px;
+  width: 600px;
+}
+
+#customer input[type="submit"] {
+  width: 800px;
+}
+
+.feedback-form {
+  border-top: 4px solid #e51b2f;
+  border-bottom: 4px solid #e51b2f;
+  border-radius: 10px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  margin-top: 20px;
+}
+
+.feedback-form h3,
+.feedback-form h4,
+.feedback-form form {
+  text-align: center;
+}
+
+.feedback-form h3 {
+  padding-bottom: 20px;
 }
 
 .location {

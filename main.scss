@@ -469,6 +469,47 @@ ul li {
   padding: 20px;
 }
 
+// Feedback form
+
+#customer input[type="subject"] {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+textarea {
+  height: 150px;
+  width: 600px;
+}
+
+#customer input[type="submit"] {
+  width: 800px;
+}
+
+.feedback-form {
+  border-top: 4px solid $banner-color;
+  border-bottom: 4px solid $banner-color;
+  border-radius: 10px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  margin-top: 20px;
+}
+
+.feedback-form {
+  h3,
+  h4,
+  form {
+    text-align: center;
+  }
+}
+
+.feedback-form {
+  h3 {
+    padding-bottom: 20px;
+  }
+}
+
 // Locations
 
 .location {
