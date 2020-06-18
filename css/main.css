@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@800;900&display=swap");
 #parallax .block {
   padding: 50px;
   margin: 0 220px;
@@ -173,13 +174,13 @@ img {
   position: sticky;
   top: 0;
   z-index: 10;
-  height: 70px;
-  padding: 5px;
+  height: 60px;
+  padding: 0px;
 }
 
 #main-nav .logo {
-  width: 100px;
-  height: 55px;
+  width: auto;
+  height: 40px;
   overflow: hidden;
 }
 
@@ -193,12 +194,13 @@ img {
 #main-nav span h2 {
   color: #ffffff;
   display: inline-block;
-  font-family: myFirstFont;
-  font-size: 21px;
+  font-family: "Inknut Antiqua", serif;
+  font-size: 20px;
   text-align: center;
-  font-weight: 800;
+  font-weight: 900;
   margin: 0;
   padding: 0;
+  text-transform: uppercase;
 }
 
 #main-nav .container-n {
@@ -214,15 +216,16 @@ img {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   padding-left: 0;
-  font-size: 14px;
+  font-size: 15px;
   text-decoration: none;
   list-style: none;
   margin: 0;
   text-align: center;
+  align-items: center;
 }
 
 .top-nav .fas {
-  padding-right: 10px;
+  padding-right: 2px;
 }
 
 ul li {
