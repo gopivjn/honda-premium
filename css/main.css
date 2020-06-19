@@ -542,9 +542,26 @@ textarea {
   padding: 20px;
 }
 
+.location a {
+  text-decoration: none;
+  color: #2e3439;
+}
+
+.location h5 {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.location a:hover {
+  color: #e51b2f;
+}
+
 .location p {
   font-size: 12px;
   padding: 20px;
+  text-align: center;
 }
 
 #location .location-img {
