@@ -548,8 +548,9 @@ textarea {
 }
 
 #location .location-img {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
 }
 
 #location h3 {
