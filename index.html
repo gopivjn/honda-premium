@@ -16,6 +16,8 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
     <link rel="stylesheet" href="./css/main.css" />
   </head>
 
@@ -168,15 +170,17 @@
     </section>
 
     <!-- 4: Models Gallery -->
+
     <section id="gallery">
       <div class="container">
         <h2 class="title-style">Latest Models</h2>
         <div class="bottom-line"></div>
+        <!-- <div class="move"></div> -->
         <div class="items">
-          <div class="item">
+          <div class="item showcase-right">
             <div class="item-image">
-              <a href="https://www.hondacarindia.com/honda-amaze"
-                ><img src="./img/grid1.png" alt="Amaze"
+              <a href="https://www.hondacarindia.com/honda-amaze">
+                <img src="./img/grid1.png" alt="Amaze"
               /></a>
             </div>
             <div class="item-text">
@@ -186,7 +190,7 @@
               </div>
             </div>
           </div>
-          <div class="item">
+          <div class="item showcase-top">
             <div class="item-image">
               <a href="https://www.hondacarindia.com/honda-city"
                 ><img src="./img/grid2.png" alt="Honda City"
@@ -199,7 +203,7 @@
               </div>
             </div>
           </div>
-          <div class="item">
+          <div class="item showcase-left">
             <div class="item-image">
               <a href="https://www.hondacarindia.com/honda-civic"
                 ><img src="./img/grid3.png" alt="Civic"
@@ -212,7 +216,8 @@
               </div>
             </div>
           </div>
-          <div class="item1">
+
+          <div class="item1 showcase-right">
             <div class="item-image">
               <a href="https://www.hondacarindia.com/honda-crv"
                 ><img src="./img/grid4.png" alt="CRV"
@@ -225,7 +230,7 @@
               </div>
             </div>
           </div>
-          <div class="item1">
+          <div class="item1 showcase-bottom">
             <div class="item-image">
               <a href="https://www.hondacarindia.com/new-honda-wrv"
                 ><img src="./img/grid5.png" alt="WR-V"
@@ -238,7 +243,7 @@
               </div>
             </div>
           </div>
-          <div class="item2">
+          <div class="item2 showcase-left">
             <div class="item-image1">
               <a href="https://www.hondacarindia.com/honda-jazz"
                 ><img src="./img/Jazz_logo_black.png" alt="New Jazz"
@@ -471,6 +476,7 @@
         </div>
       </div>
     </section> -->
+
     <!--9: Testimonials -->
     <section id="customer">
       <h2 class="title-style">Testimonials</h2>
@@ -546,6 +552,11 @@
       </div>
     </footer>
 
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.js"
+      integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"
+    ></script>
     <script>
       function openModal() {
         document.getElementById("myModal").style.display = "block";
@@ -583,6 +594,7 @@
         captionText.innerHTML = dots[slideIndex - 1].alt;
       }
     </script>
+
     <script>
       // Smooth Scrolling
       $("#main-nav a").on("click", function (e) {
@@ -598,6 +610,30 @@
             900
           );
         }
+      });
+    </script>
+    <script>
+      //Transition effects
+      window.sr = ScrollReveal();
+      sr.reveal(".showcase-left", {
+        duration: 2000,
+        origin: "left",
+        distance: "300px",
+      });
+      sr.reveal(".showcase-right", {
+        duration: 2000,
+        origin: "right",
+        distance: "800px",
+      });
+      sr.reveal(".showcase-top", {
+        duration: 2000,
+        origin: "top",
+        distance: "300px",
+      });
+      sr.reveal(".showcase-bottom", {
+        duration: 2000,
+        origin: "bottom",
+        distance: "300px",
       });
     </script>
   </body>

@@ -174,8 +174,9 @@ img {
   position: sticky;
   top: 0;
   z-index: 10;
-  height: 60px;
-  padding: 0px;
+  height: 90px;
+  padding-top: 20px;
+  align-items: center;
 }
 
 #main-nav .logo {
@@ -792,6 +793,9 @@ img.hover-shadow {
   #main-nav ul li {
     font-size: 22px;
   }
+  .container-n {
+    padding: 0;
+  }
   #gallery .items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -847,6 +851,9 @@ img.hover-shadow {
 @media only screen and (max-width: 550px) {
   body {
     width: 550px;
+  }
+  .container-n {
+    padding: 0;
   }
   #main-nav .container-n {
     max-width: 550px;
@@ -909,13 +916,40 @@ img.hover-shadow {
 
 @media only screen and (max-width: 320px) {
   body {
-    width: 550px;
+    width: 320px;
+  }
+  .container-n {
+    padding: 0;
   }
   #main-nav ul li {
-    font-size: 26px;
+    font-size: 20px;
   }
   #gallery .items {
     grid-template-columns: repeat(1, 1fr);
+  }
+  #main-nav span h2 {
+    color: #ffffff;
+    display: inline-block;
+    font-family: "Inknut Antiqua", serif;
+    font-size: 16px;
+  }
+}
+
+.move {
+  width: 100px;
+  height: 5px;
+  background: linear-gradient(270deg, transparent, #e51b2f);
+  position: absolute;
+  animation: mymove 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mymove {
+  from {
+    right: 100px;
+  }
+  to {
+    right: 1120px;
   }
 }
 /*# sourceMappingURL=main.css.map */
