@@ -878,7 +878,7 @@ img.hover-shadow {
 // Smart phones
 @media only screen and (max-width: 550px) {
   body {
-    width: 550px;
+    width: 100%;
   }
   .container-n {
     padding: 0;
@@ -894,6 +894,9 @@ img.hover-shadow {
     ul li {
       font-size: 24px;
     }
+  }
+  #myModal {
+    display: none;
   }
 
   #gallery {
@@ -939,11 +942,12 @@ img.hover-shadow {
   #main-footer .container-f {
     display: grid;
     grid-template-columns: 8fr 2fr;
-    align-items: center;
+    // align-items: center;
     grid-gap: 5rem;
     padding: 10px;
     margin: 5px;
     overflow: scroll;
+    height: 350px;
   }
 
   .social img {
@@ -956,7 +960,7 @@ img.hover-shadow {
 
 @media only screen and (max-width: 320px) {
   body {
-    width: 320px;
+    width: 100%;
   }
 
   .container-n {
@@ -979,6 +983,10 @@ img.hover-shadow {
     font-family: "Inknut Antiqua", serif;
     font-size: 16px;
   }
+}
+
+#myModal {
+  display: none;
 }
 
 // Animation
