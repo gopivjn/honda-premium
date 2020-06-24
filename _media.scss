@@ -1,0 +1,59 @@
+// Tablets & Smaller
+@media only screen and (max-width: 768px) {
+  #main-nav {
+    ul span {
+      display: none;
+    }
+    ul li {
+      font-size: 22px;
+    }
+  }
+
+  #gallery {
+    .items {
+      display: none;
+      grid-template-columns: 1fr 1fr;
+      padding: 1em;
+      grid-row-gap: 100px;
+    }
+  }
+}
+// Smart phones
+@media (max-width: 550px) {
+  body {
+    width: 550px;
+  }
+  #main-nav {
+    .container-n {
+      max-width: 550px;
+    }
+    .logo {
+      display: none;
+    }
+    ul li {
+      font-size: 24px;
+    }
+  }
+
+  #gallery {
+    .items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    width: 550px;
+  }
+  #main-nav {
+    ul li {
+      font-size: 26px;
+    }
+  }
+  #gallery {
+    .items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
