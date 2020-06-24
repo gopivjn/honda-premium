@@ -999,4 +999,99 @@ img.hover-shadow {
     right: 1120px;
   }
 }
+
+html {
+  background: #ffffff;
+  color: black;
+  --theme-toggle-content: "";
+}
+
+html [data-theme="dark"] {
+  background: black;
+  color: #ffffff;
+  --theme-toggle-content: "";
+}
+
+html [data-theme="dark"] .container-n,
+html [data-theme="dark"] .container {
+  background: black;
+  color: #ffffff;
+}
+
+html [data-theme="dark"] #main-nav {
+  background: black;
+  color: #ffffff;
+  border-bottom: 3px solid #e51b2f;
+}
+
+html [data-theme="dark"] #gallery h6 {
+  color: #ffffff;
+}
+
+html [data-theme="dark"] #main-footer {
+  background: black;
+  color: #ffffff;
+}
+
+html [data-theme="dark"] #main-footer .container-f {
+  background: black;
+  color: #ffffff;
+  border-top: 2px solid #e51b2f;
+}
+
+html [data-theme="dark"] #location p {
+  color: #ffffff;
+}
+
+html [data-theme="dark"] #location .container {
+  margin-top: 100px;
+  box-shadow: 0 12px 0px 0px #e51b2f, 0 -12px 0px 0px #e51b2f, 8px 0 10px -4px rgba(173, 173, 173, 0.3), -8px 0 10px -4px rgba(173, 173, 173, 0.3);
+  border-radius: 5px;
+}
+
+html [data-theme="dark"] #gallery .item {
+  box-shadow: 0 5px 10px 0 rgba(173, 173, 173, 0.3);
+}
+
+html [data-theme="dark"] #gallery .item1 {
+  box-shadow: 0 5px 10px 0 rgba(173, 173, 173, 0.3);
+}
+
+html [data-theme="dark"] #gallery .item2 {
+  box-shadow: 0 5px 10px 0 rgba(173, 173, 173, 0.3);
+}
+
+html [data-theme="dark"] #gallery-s .hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 #ffffff, 0 6px 20px 0 #ffffff;
+}
+
+html [data-theme="dark"] #test-drive,
+html [data-theme="dark"] #servicing-book {
+  background: black;
+  color: #ffffff;
+}
+
+html [data-theme="dark"] #test-drive .container,
+html [data-theme="dark"] #servicing-book .container {
+  background: black;
+  color: #ffffff;
+}
+
+.theme-toggle {
+  position: fixed;
+  right: 10px;
+  top: 0px;
+  background: transparent;
+  color: yellow;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.theme-toggle::after {
+  content: var(--theme-toggle-content);
+}
 /*# sourceMappingURL=main.css.map */

@@ -21,7 +21,9 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
-  <body>
+  <body class="sectionbg">
+    <!--Dark Theme -->
+
     <!-- 1: Navigation -->
     <nav id="main-nav">
       <div class="container-n">
@@ -68,6 +70,7 @@
             >
           </li>
         </ul>
+        <span id="theme-toggle" class="theme-toggle">Theme</span>
       </div>
     </nav>
     <!-- Section 2: Banner -->
@@ -336,10 +339,7 @@
             </div>
             <div class="mySlides">
               <div class="numbertext">2 / 8</div>
-              <img
-                src="img/gallery2.jpeg"
-                style="width: 90%; height: 85vh;"
-              />
+              <img src="img/gallery2.jpeg" style="width: 90%; height: 85vh;" />
             </div>
             <div class="mySlides">
               <div class="numbertext">3 / 8</div>
@@ -636,6 +636,22 @@
         origin: "bottom",
         distance: "300px",
       });
+    </script>
+    <!--dark-mode-->
+    <script>
+      function toggleTheme() {
+        const htmlTag = document.getElementsByClassName("sectionbg")[0];
+        if (htmlTag.hasAttribute("data-theme")) {
+          htmlTag.removeAttribute("data-theme");
+          return;
+        }
+
+        htmlTag.setAttribute("data-theme", "dark");
+      }
+
+      document
+        .getElementById("theme-toggle")
+        .addEventListener("click", toggleTheme);
     </script>
   </body>
 </html>
