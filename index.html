@@ -2,6 +2,29 @@
 <html lang="en">
   <head>
     <title>Premium Honda</title>
+    <meta
+      name="description"
+      content="Most comprehensive and convenient Honda dealership for buyers and owners "
+    />
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Premium Honda" />
+    <meta
+      itemprop="description"
+      content="Most comprehensive and convenient Honda dealership for buyers and owners "
+    />
+    <meta itemprop="image" content="img/grid3.png" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.premiumhonda.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Premium Honda" />
+    <meta
+      property="og:description"
+      content="Most comprehensive and convenient Honda dealership for buyers and owners "
+    />
+    <meta property="og:image" content="img/grid3.png" />
+    <title>Premium Honda</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -22,8 +45,6 @@
   </head>
 
   <body class="sectionbg">
-    <!--Dark Theme -->
-
     <!-- 1: Navigation -->
     <nav id="main-nav">
       <div class="container-n">
@@ -151,7 +172,7 @@
     <!-- 3: Intro -->
     <section id="intro">
       <div class="container">
-        <div class="intro">
+        <div>
           <div>
             <h2 class="title-style">Why Premium Honda?</h2>
             <div class="bottom-line"></div>
@@ -641,6 +662,7 @@
     <script>
       function toggleTheme() {
         const htmlTag = document.getElementsByClassName("sectionbg")[0];
+
         if (htmlTag.hasAttribute("data-theme")) {
           htmlTag.removeAttribute("data-theme");
           return;
